@@ -3262,7 +3262,6 @@ var instanceId = 0;
 
 
 
-
 function stringifyValue(value) {
   if (typeof value === 'string') return value; // istanbul ignore else
 
@@ -3271,12 +3270,11 @@ function stringifyValue(value) {
   return '';
 }
 
-/* harmony default export */ var HiddenFieldsvue_type_script_lang_js = ((0,external_commonjs_vue_commonjs2_vue_root_Vue_.defineComponent)({
+/* harmony default export */ var HiddenFieldsvue_type_script_lang_js = ({
   name: 'vue-treeselect--hidden-fields',
   inject: ['instance'],
-  functional: true,
-  render: function render(context) {
-    var instance = context.instance;
+  render: function render() {
+    var instance = this.instance;
     if (!instance) return null;
     if (!("name" in instance)) return null;
     if (!instance.name || instance.disabled || !instance.hasValue) return null;
@@ -3291,7 +3289,7 @@ function stringifyValue(value) {
       }, null);
     });
   }
-}));
+});
 ;// CONCATENATED MODULE: ./src/components/HiddenFields.vue
 
 
@@ -4162,10 +4160,8 @@ function setupResizeAndScrollEventListeners($el, listener) {
 }
 ;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-85.use[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/Tip.vue?vue&type=script&lang=js
 
-
-/* harmony default export */ var Tipvue_type_script_lang_js = ((0,external_commonjs_vue_commonjs2_vue_root_Vue_.defineComponent)({
+/* harmony default export */ var Tipvue_type_script_lang_js = ({
   name: 'vue-treeselect--tip',
-  functional: true,
   props: {
     type: {
       type: String,
@@ -4176,7 +4172,7 @@ function setupResizeAndScrollEventListeners($el, listener) {
       required: true
     }
   },
-  render: function render(context) {
+  render: function render() {
     var type = this.type,
         icon = this.icon;
     return (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createVNode)("div", {
@@ -4189,7 +4185,7 @@ function setupResizeAndScrollEventListeners($el, listener) {
       "class": "vue-treeselect__tip-text vue-treeselect__".concat(type, "-tip-text")
     }, [this.$slots.default()])]);
   }
-}));
+});
 ;// CONCATENATED MODULE: ./src/components/Tip.vue
 
 

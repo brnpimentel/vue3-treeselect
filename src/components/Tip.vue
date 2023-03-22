@@ -1,6 +1,5 @@
 <script>
-  import {defineComponent} from 'vue';
-  export default defineComponent({
+  export default {
     name: 'vue-treeselect--tip',
 
     props: {
@@ -14,8 +13,8 @@
       },
     },
 
-    render(context) {
-      const { type,icon } = this
+    render() {
+      const { type, icon } = this
 
       return (
         <div class={`vue-treeselect__tip vue-treeselect__${type}-tip`}>
@@ -28,5 +27,5 @@
         </div>
       )
     },
-  })
+  }
 </script>
