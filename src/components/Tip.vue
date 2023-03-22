@@ -2,7 +2,6 @@
   import {defineComponent} from 'vue';
   export default defineComponent({
     name: 'vue-treeselect--tip',
-    functional: true,
 
     props: {
       type: {

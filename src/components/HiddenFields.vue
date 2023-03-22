@@ -13,7 +13,6 @@
   export default defineComponent({
     name: 'vue-treeselect--hidden-fields',
     inject: [ 'instance' ],
-    functional: true,
 
     render(context) {
       const instance = context.instance
